@@ -1,0 +1,21 @@
+.nav.justify-content-center{
+    background-color:$nav-color;
+    .nav-item{
+        border: 5px solid $borders-color;
+        background-color: $navbutton-color;
+        border-radius: 25%;
+        margin:0px 25px; 
+
+        .nav-link.active{
+            color: $active-color;
+            font-family: $font-bebas-neue;
+            font-size: 40px;
+        }
+        .nav-link{
+            color: $deactive-color;
+            font-family: $font-bebas-neue;
+            font-size: 40px;
+        }
+    }
+
+}
