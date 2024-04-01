@@ -21,6 +21,8 @@
 }
 .PrincipalProducts{
     text-align: center;
+    margin-top: 10px;
+    padding-right: 20px;
     .PrincipalProductsList{
         list-style: none;
         display: grid;
@@ -29,8 +31,8 @@
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         li{
-            background-color: black;
-            border: 4px solid red;
+            background-color: $topProduct-color;
+            border: 4px solid $borders-color;
             div{
                 img{
                     width: 25%;
@@ -51,5 +53,45 @@
             }
   
         }
+    }
+}
+.TopPages{
+    display: flex;
+    align-self: auto;
+    justify-content: space-around;
+    .SearchBar{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .Logo{
+        text-align: left;
+        width: 350px;
+        height: 150px;
+        
+        img{
+            border-radius: 25%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    }
+    .UserData{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+}
+.News{
+    border: 8px solid $borders-color;
+}
+.carousel-item{
+    width: 100%;
+    height: 500px;
+    img{
+        width: 100%;
+        height: 100%;
     }
 }

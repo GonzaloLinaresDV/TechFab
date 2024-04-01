@@ -21,6 +21,8 @@
 
 .PrincipalProducts {
   text-align: center;
+  margin-top: 10px;
+  padding-right: 20px;
 }
 .PrincipalProducts .PrincipalProductsList {
   list-style: none;
@@ -31,8 +33,8 @@
   grid-row-gap: 10px;
 }
 .PrincipalProducts .PrincipalProductsList li {
-  background-color: black;
-  border: 4px solid red;
+  background-color: white;
+  border: 4px solid #181514;
 }
 .PrincipalProducts .PrincipalProductsList li div img {
   width: 25%;
@@ -46,6 +48,48 @@
   height: 100px;
 }
 .PrincipalProducts .PrincipalProductsList li div button img {
+  width: 100%;
+  height: 100%;
+}
+
+.TopPages {
+  display: flex;
+  align-self: auto;
+  justify-content: space-around;
+}
+.TopPages .SearchBar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.TopPages .Logo {
+  text-align: left;
+  width: 350px;
+  height: 150px;
+}
+.TopPages .Logo img {
+  border-radius: 25%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.TopPages .UserData {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.News {
+  border: 8px solid #181514;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 500px;
+}
+.carousel-item img {
   width: 100%;
   height: 100%;
 }
