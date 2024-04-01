@@ -33,11 +33,21 @@
 .PrincipalProducts .PrincipalProductsList li {
   background-color: black;
   border: 4px solid red;
+}
+.PrincipalProducts .PrincipalProductsList li div img {
+  width: 25%;
+  height: 25%;
+}
+.PrincipalProducts .PrincipalProductsList li div p {
+  font-family: "Bebas Neue", sans-serif;
+}
+.PrincipalProducts .PrincipalProductsList li div button {
+  width: 300px;
+  height: 100px;
+}
+.PrincipalProducts .PrincipalProductsList li div button img {
   width: 100%;
   height: 100%;
-}
-.PrincipalProducts .PrincipalProductsList li img {
-  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
