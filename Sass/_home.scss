@@ -19,3 +19,23 @@
     }
 
 }
+.PrincipalProducts{
+    text-align: center;
+    .PrincipalProductsList{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr) ;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        li{
+            background-color: black;
+            border: 4px solid red;            
+            width: 100%;
+            height: 100%;
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
