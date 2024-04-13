@@ -11,15 +11,14 @@
     
     
     <!--JavaScript-->
-    <script src="../JavaScript/cart.js"></script>
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="../JavaScript/cart.js"></script>
     <title>TECH FAB || PRODUCTS </title>
 </head>
 <body>
+
   <header>
     <section class="TopPages">
       <div class="Logo">
@@ -53,62 +52,78 @@
     </section>
   </header>
 
-  <section class="PrincipalProducts">
-    <ul class="PrincipalProductsList"> 
+  <section class="products">
+    <ul class="products-containers"> 
       <li>
         <div>
-          <img src="../Multimedia/placeholder.png " alt="" srcset="">
+          <img src="../Multimedia/pendrive.png " alt="" srcset="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
-          <button class="AddButton">
-            <img src="../Multimedia/placeholder.png" alt="">
+          <button class="addButton"data-price="100"data-name="PENDRIVE">            
+            <p>ADD TO CART 100</p>
+          </button>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="../Multimedia/cable.png " alt="" srcset="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
+          <button class="addButton"data-price="500"data-name="CABLE">            
+            <p>ADD TO CART 500</p>
           </button>
         </div>
       </li>
       <li>
         <div>
-          <img src="../Multimedia/placeholder.png " alt="" srcset="">
+          <img src="../Multimedia/ssd.png " alt="" srcset="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
-          <button class="AddButton">
-            <img src="../Multimedia/placeholder.png" alt="">
+          <button class="addButton"data-price="1000"data-name="SSD">            
+            <p>ADD TO CART 1000</p>
           </button>
         </div>
       </li>
       <li>
         <div>
-          <img src="../Multimedia/placeholder.png " alt="" srcset="">
+          <img src="../Multimedia/ram.png " alt="" srcset="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
-          <button class="AddButton">
-            <img src="../Multimedia/placeholder.png" alt="">
+          <button class="addButton"data-price="1500"data-name="RAM">            
+            <p>ADD TO CART 1500</p>
           </button>
         </div>
       </li>
       <li>
         <div>
-          <img src="../Multimedia/placeholder.png " alt="" srcset="">
+          <img src="../Multimedia/cooler.png " alt="" srcset="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
-          <button class="AddButton">
-            <img src="../Multimedia/placeholder.png" alt="">
+          <button class="addButton"data-price="7500"data-name="COOLER">            
+            <p>ADD TO CART 7500</p>
           </button>
         </div>
       </li>
       <li>
         <div>
-          <img src="../Multimedia/placeholder.png " alt="" srcset="">
+          <img src="../Multimedia/cpu.jpg " alt="" srcset="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
-          <button class="AddButton">
-            <img src="../Multimedia/placeholder.png" alt="">
-          </button>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img src="../Multimedia/placeholder.png " alt="" srcset="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex delectus quis quisquam animi nam, quas hic facere tenetur quasi fugit, temporibus necessitatibus beatae deleniti nulla vitae aspernatur consequatur! Vero.</p>
-          <button class="AddButton">
-            <img src="../Multimedia/placeholder.png" alt="">
+          <button class="addButton"data-price="9500" data-name="CPU">            
+            <p>ADD TO CART 9500</p>
           </button>
         </div>
       </li>
     </ul>
+
+  <section>
+    <button id="clearButton">            
+      <p>BORRAR LISTA</p>
+    </button>
+  </section>
+  <section>
+    <p id="totalAmount">TOTAL A PAGAR:</p>
+    <ul id="Cartlist">
+    </ul>
+  </section>
+  
+  
+  <script src="../JavaScript/cart.js"></script>
+
 </body>
 </html>

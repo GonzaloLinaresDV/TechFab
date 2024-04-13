@@ -1,0 +1,37 @@
+.products{
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 20px;
+    .products-containers{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr) ;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        li{
+            background-color: $topProduct-color;
+            border: 4px solid $borders-color;
+            div{
+                img{
+                    width: 25%;
+                    height: 25%
+                }
+                p{
+                    font-family: $font-bebas-neue;
+                }
+                button{
+                    width: 300px;
+                    height: 100px;
+                    background-color: green;
+                    img{
+                       width: 100%;
+                       height: 100%;
+                    }
+                }
+
+            }
+            //ayuda
+        }
+    }
+}
