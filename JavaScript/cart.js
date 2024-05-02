@@ -1,4 +1,13 @@
 let total=0;
+let price;
+let product;
+
+function Constructor(price, product){
+    thie.price=price;
+    this.product=product;
+}
+
+
 document.querySelectorAll('.addButton').forEach(button => {
     button.addEventListener('click', function() {
         const price = parseFloat(this.getAttribute('data-price'));
@@ -37,22 +46,40 @@ function updateText(){
 
 let productNames = new Set();
 
+const productInList = []; 
+let productCount={};
+
 function addToCartList(name){
     let newName = name;
-    let count = 1;
 
-    while (productNames.has(newName)) {
+    if(!productInList.includes(name)){
+        productInList.push(name); 
+        productCount[name]=1
+    }else{
+        if(productInList.includes){
+            productCount[name]++;
+
+            productInList.push(name + " x " + productCount[name]);
+
+        }
+
+    }
+
+   /* while (productNames.has(newName)) {
         count++;
         newName = `${name} x${count}`;
-    }
+    }*/
+
+
+
+
+    console.log(productInList);
 
     productNames.add(newName);
 
     const existingItem=document.querySelector(`.Cartlist li[data-name="${name}"]`);
     if(existingItem){
         existingItem.textContent=newName;
-    }else{
-        
     }
     if(name=newName){
         const listItem = document.createElement('li');
@@ -71,4 +98,5 @@ clearButton.addEventListener('click',function(){
     total=0;
     updateText();
     productNames.clear();
+    productInList.splice(0,productInList.length);
 });
