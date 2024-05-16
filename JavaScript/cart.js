@@ -95,6 +95,7 @@ function loadCartFromJson() {
 document.addEventListener('DOMContentLoaded', function(){
     loadCartFromJson();
 });
+
 // Clear the cart list and reset total
 const clearButton = document.getElementById('clearButton');
 clearButton.addEventListener('click', function() {
